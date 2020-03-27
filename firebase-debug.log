@@ -1,0 +1,60 @@
+[debug] [2020-03-27T18:31:50.249Z] ----------------------------------------------------------------------
+[debug] [2020-03-27T18:31:50.251Z] Command:       /usr/local/bin/node /usr/local/bin/firebase projects:create environment-test-production
+[debug] [2020-03-27T18:31:50.251Z] CLI Version:   7.11.0
+[debug] [2020-03-27T18:31:50.251Z] Platform:      darwin
+[debug] [2020-03-27T18:31:50.251Z] Node Version:  v10.16.3
+[debug] [2020-03-27T18:31:50.252Z] Time:          Fri Mar 27 2020 12:31:50 GMT-0600 (Mountain Daylight Time)
+[debug] [2020-03-27T18:31:50.252Z] ----------------------------------------------------------------------
+[debug] [2020-03-27T18:31:50.252Z] 
+[debug] [2020-03-27T18:31:50.261Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-27T18:31:50.261Z] > authorizing via signed-in user
+[debug] [2020-03-27T18:32:01.060Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-03-27T18:32:01.060Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-03-27T18:32:01.271Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-27T18:32:01.285Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+
+[debug] [2020-03-27T18:32:01.662Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-27T18:32:01.665Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5189380681070376171  
+ 
+[debug] [2020-03-27T18:32:02.065Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-27T18:32:02.571Z] [Project Creation Poller] Retrying task index 0
+[debug] [2020-03-27T18:32:02.571Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.5189380681070376171  
+ 
+[debug] [2020-03-27T18:32:03.021Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-27T18:32:03.023Z] The project cannot be created because you have exceeded your allotted project quota.
+[debug] [2020-03-27T18:32:03.094Z] FirebaseError: The project cannot be created because you have exceeded your allotted project quota.
+    at OperationPoller.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/operation-poller.js:31:23)
+    at Generator.next (<anonymous>)
+    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/operation-poller.js:4:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: Failed to create Google Cloud project. See firebase-debug.log for more info.
+[debug] [2020-03-27T18:37:22.945Z] ----------------------------------------------------------------------
+[debug] [2020-03-27T18:37:22.947Z] Command:       /usr/local/bin/node /usr/local/bin/firebase projects:create environment-test-production
+[debug] [2020-03-27T18:37:22.947Z] CLI Version:   7.11.0
+[debug] [2020-03-27T18:37:22.947Z] Platform:      darwin
+[debug] [2020-03-27T18:37:22.947Z] Node Version:  v10.16.3
+[debug] [2020-03-27T18:37:22.971Z] Time:          Fri Mar 27 2020 12:37:22 GMT-0600 (Mountain Daylight Time)
+[debug] [2020-03-27T18:37:22.971Z] ----------------------------------------------------------------------
+[debug] [2020-03-27T18:37:22.971Z] 
+[debug] [2020-03-27T18:37:22.980Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-27T18:37:22.981Z] > authorizing via signed-in user
+[debug] [2020-03-27T18:37:27.838Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+
+[debug] [2020-03-27T18:37:28.345Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-27T18:37:28.348Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8461170079286840593  
+ 
+[debug] [2020-03-27T18:37:28.760Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-27T18:37:29.265Z] [Project Creation Poller] Retrying task index 0
+[debug] [2020-03-27T18:37:29.266Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/operations/cp.8461170079286840593  
+ 
+[debug] [2020-03-27T18:37:29.691Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-27T18:37:29.692Z] The project cannot be created because you have exceeded your allotted project quota.
+[debug] [2020-03-27T18:37:29.752Z] FirebaseError: The project cannot be created because you have exceeded your allotted project quota.
+    at OperationPoller.<anonymous> (/usr/local/lib/node_modules/firebase-tools/lib/operation-poller.js:31:23)
+    at Generator.next (<anonymous>)
+    at fulfilled (/usr/local/lib/node_modules/firebase-tools/lib/operation-poller.js:4:58)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+[error] 
+[error] Error: Failed to create Google Cloud project. See firebase-debug.log for more info.
