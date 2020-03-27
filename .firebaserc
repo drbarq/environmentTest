@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "environment-test-development",
+    "production": "environment-test-production"
+  }
+}
